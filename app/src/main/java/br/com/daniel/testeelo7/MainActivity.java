@@ -16,8 +16,8 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private String clientId = "32f2819c0e21a9b5b1fe";
-    private String clientSecret = "b3acf58a5d07eba63f066d1bb1319fdb785eb1d1";
+    private String clientId = "#";
+    private String clientSecret = "#";
     private String callback = "elo7://callback";
     private Button BtnLogin;
     @Override
