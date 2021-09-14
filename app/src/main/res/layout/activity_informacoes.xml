@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityInformacoes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewInfo"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_lock_lock" />
+
+            <TextView
+                android:id="@+id/txtTituloInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:maxEms="30"
+                android:singleLine="false"
+                android:text="Titulo repositorio"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtDescricaoInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxEms="30"
+            android:singleLine="false"
+            android:text="Descricao bem grande do repositorio  e talz"
+            android:textStyle="italic"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                app:srcCompat="@android:drawable/btn_star" />
+            <TextView
+                android:id="@+id/txtEstrelas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:maxEms="30"
+                android:singleLine="false"
+                android:text="Estrelas"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                app:srcCompat="@android:drawable/ic_menu_share" />
+            <TextView
+                android:id="@+id/txtForks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:maxEms="30"
+                android:singleLine="false"
+                android:text="Forks"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wbInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
